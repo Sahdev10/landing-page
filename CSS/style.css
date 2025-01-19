@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* background-color: transparent;  */
+    background-color: rgb(69, 68, 68);
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+/* Navbar logo */
+#logo {
+    margin: 4px 35px;
+    padding: 0;
+}
+
+#logo img {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+}
+
+/* Navbar list */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', sans-serif;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 3px 15px;
+    padding: 3px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Scrolled navbar */
+#navbar.scrolled {
+    background-color: #333; /* Dark background when scrolled */
+}
+
+/* Adjust padding and style when scrolled */
+#navbar.scrolled ul li a {
+    color: white; /* Text color for scrolled state */
+}
+
+/* Fix overlapping with the rest of the content */
+body {
+    padding-top: 70px; /* Add padding to avoid content overlap with navbar */
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    height: 400px;
+    margin-bottom: 90px;
+}
+
+#home h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(5, 3, 3);
+    font-family: 'Bree Serif', serif;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    height: 550px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+/* Button */
+.btn {
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid rgb(196, 84, 84);
+    margin: 15px;
+    padding: 8px;
+    background-color: brown;
+    color: white;
+}
+
+.btn:hover {
+    color: rgb(0, 0, 0);
+}
+
+/* Services section */
+#services-container {
+    font-family: 'Bree Serif', serif;
+}
+
+#services-container h1 {
+    padding: 0px;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    background-color: #ffdada;
+    padding: 34px;
+    margin: 2px 4px;
+    border-radius: 28px;
+    margin-bottom: 20px;
+}
+
+#services .box img {
+    height: 75px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    padding: 4px;
+    margin-top: 10px;
+}
+
+#services .box h2 {
+    padding: 5px;
+}
+
+/* Client section */
+#client-section {
+    position: relative;
+}
+
+#client {
+    display: flex;
+    justify-content: center;
+}
+
+.client-logo img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg') no-repeat center center/cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Contact section */
+#contact-section {
+    position: relative;
+}
+
+#contact-section::before {
+    content: "";
+    position: absolute;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.formgroup {
+    padding-bottom: 7px;
+}
+
+/* Footer */
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Specific class */
+.center {
+    text-align: center;
+}
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 15px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 15px;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar ul li a.active {
+    
+    color: black;
+}
+#contact-section {
+    position: relative;
+    padding: 50px 0;
+}
+
+#contact-section::before {
+    content: "";
+    position: absolute;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact form {
+    width: 100%;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #6c63ff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.5);
+}
+
+#contact textarea {
+    resize: none;
+    height: 150px;
+}
+
+.formgroup {
+    padding-bottom: 15px;
+}
+
+#contact button {
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #4b42d1;
+}
+#about-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#about-section h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#about-text {
+    flex: 1;
+    max-width: 800px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#about-text p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
