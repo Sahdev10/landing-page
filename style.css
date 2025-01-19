@@ -13,7 +13,8 @@
     width: 100%;
     top: 0;
     /* background-color: transparent;  */
-    background-color: rgb(69, 68, 68);
+    background-color: black;
+    color: white;
     transition: background-color 0.3s ease-in-out; /* Smooth transition */
     padding: 10px 20px;
     z-index: 1000;
@@ -250,7 +251,7 @@ footer {
 
 #navbar ul li a.active {
     
-    color: black;
+    color: yellow !important;
 }
 #contact-section {
     position: relative;
